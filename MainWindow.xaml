@@ -1,0 +1,85 @@
+﻿<Window x:Class="InvokerGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InvokerGame"
+        mc:Ignorable="d"
+        Title="Invoker Spells" Height="684.666" Width="510.667" ResizeMode="NoResize" Loaded="Window_Loaded" Icon="icons/invoker-invoke.jpg" KeyDown="Window_KeyDown">
+	<Window.Background>
+		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+			<GradientStop Color="#FF7A4CF7" Offset="0"/>
+			<GradientStop Color="#FFAC44CB" Offset="1"/>
+		</LinearGradientBrush>
+	</Window.Background>
+	<Grid>
+		<Border BorderBrush="White" BorderThickness="2" HorizontalAlignment="Left" Height="460" Margin="10,10,0,0" VerticalAlignment="Top" Width="474" CornerRadius="1">
+			<Canvas x:Name="GameField" ClipToBounds="True">
+				<Canvas.Background>
+					<ImageBrush ImageSource="icons/background.jpg"/>
+				</Canvas.Background>
+				<Label x:Name="scoreLabel" Content="0" Canvas.Left="392" Height="55" Width="78" Foreground="White" FontFamily="Comic Sans MS" FontSize="36"/>
+				<Rectangle HorizontalAlignment="Left" Height="100" Stroke="White" VerticalAlignment="Top" Width="100" Canvas.Left="117" Canvas.Top="-475">
+					<Rectangle.Fill>
+						<ImageBrush ImageSource="icons/invoker-alacrity.jpg"/>
+					</Rectangle.Fill>
+				</Rectangle>
+				<Rectangle HorizontalAlignment="Left" Height="100" Stroke="White" VerticalAlignment="Top" Width="100" Canvas.Left="196" Canvas.Top="-616">
+					<Rectangle.Fill>
+						<ImageBrush ImageSource="icons/invoker-alacrity.jpg"/>
+					</Rectangle.Fill>
+				</Rectangle>
+				<Rectangle HorizontalAlignment="Left" Height="100" Stroke="White" VerticalAlignment="Top" Width="100" Canvas.Left="117" Canvas.Top="-210">
+					<Rectangle.Fill>
+						<ImageBrush ImageSource="icons/invoker-alacrity.jpg"/>
+					</Rectangle.Fill>
+				</Rectangle>
+				<Rectangle HorizontalAlignment="Left" Height="100" Stroke="White" VerticalAlignment="Top" Width="100" Canvas.Left="330" Canvas.Top="-128">
+					<Rectangle.Fill>
+						<ImageBrush ImageSource="icons/invoker-alacrity.jpg"/>
+					</Rectangle.Fill>
+				</Rectangle>
+				<Rectangle HorizontalAlignment="Left" Height="100" Stroke="White" VerticalAlignment="Top" Width="100" Canvas.Left="285" Canvas.Top="-354">
+					<Rectangle.Fill>
+						<ImageBrush ImageSource="icons/invoker-alacrity.jpg"/>
+					</Rectangle.Fill>
+				</Rectangle>
+				<Rectangle HorizontalAlignment="Left" Height="100" Stroke="White" VerticalAlignment="Top" Width="100" Canvas.Left="138" Canvas.Top="-802">
+					<Rectangle.Fill>
+						<ImageBrush ImageSource="icons/invoker-alacrity.jpg"/>
+					</Rectangle.Fill>
+				</Rectangle>
+				<Rectangle HorizontalAlignment="Left" Height="100" Stroke="White" VerticalAlignment="Top" Width="100" Canvas.Left="196" Canvas.Top="-964">
+					<Rectangle.Fill>
+						<ImageBrush ImageSource="icons/invoker-alacrity.jpg"/>
+					</Rectangle.Fill>
+				</Rectangle>
+			</Canvas>
+		</Border>
+		<Ellipse x:Name="skill1" HorizontalAlignment="Left" Height="100" Margin="10,483,0,0" Stroke="Black" VerticalAlignment="Top" Width="100">
+			<Ellipse.Fill>
+				<ImageBrush ImageSource="icons/invoker-quas.jpg"/>
+			</Ellipse.Fill>
+		</Ellipse>
+		<Ellipse x:Name="skill2" HorizontalAlignment="Left" Height="100" Margin="134,483,0,0" Stroke="Black" VerticalAlignment="Top" Width="100">
+			<Ellipse.Fill>
+				<ImageBrush ImageSource="icons/invoker-wex.jpg"/>
+			</Ellipse.Fill>
+		</Ellipse>
+		<Ellipse x:Name="skill3" HorizontalAlignment="Left" Height="100" Margin="259,483,0,0" Stroke="Black" VerticalAlignment="Top" Width="100">
+			<Ellipse.Fill>
+				<ImageBrush ImageSource="icons/invoker-exort.jpg"/>
+			</Ellipse.Fill>
+		</Ellipse>
+		<Ellipse x:Name="invoke" HorizontalAlignment="Left" Height="100" Margin="384,483,0,0" Stroke="Black" VerticalAlignment="Top" Width="100">
+			<Ellipse.Fill>
+				<ImageBrush ImageSource="icons/invoker-invoke.jpg"/>
+			</Ellipse.Fill>
+		</Ellipse>
+		<Label Content="Level:" HorizontalAlignment="Left" Margin="10,593,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White" Height="45"/>
+		<TextBox x:Name="levelTextBox" HorizontalAlignment="Left" Height="35" Margin="79,599,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="133" Foreground="White" Background="#FF1C1C1C" FontSize="24" PreviewTextInput="levelTextBox_PreviewTextInput" KeyDown="levelTextBox_KeyDown"/>
+		<Button Content="Spells" HorizontalAlignment="Left" Margin="351,593,0,0" VerticalAlignment="Top" Height="44" Width="133" Background="#FF1C1C1C" Foreground="#FFA745CF" FontSize="24" UseLayoutRounding="False" BorderBrush="#FFD8D8D8" Click="Button_Click" />
+
+
+	</Grid>
+</Window>

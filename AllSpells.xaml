@@ -1,0 +1,15 @@
+﻿<Window x:Class="InvokerGame.AllSpells"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InvokerGame"
+        mc:Ignorable="d"
+        Title="Invoker Spells" Height="684.666" Width="510.667" ResizeMode="NoResize" Icon="icons/invoker-invoke.jpg">
+	<Window.Background>
+		<ImageBrush ImageSource="/icons/allSpells.jpg"/>
+	</Window.Background>
+	<Grid>
+        
+    </Grid>
+</Window>
